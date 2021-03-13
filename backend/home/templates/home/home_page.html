@@ -1,7 +1,8 @@
 {% extends "base.html" %}
 {% load static %}
+{% load wagtailimages_tags %}
 
-{% block body_class %}template-homepage{% endblock %}
+{% block body_class %}{% endblock %}
 
 {% block extra_css %}
 
@@ -17,6 +18,223 @@ Delete the line below if you're just getting started and want to remove the welc
 Delete the line below if you're just getting started and want to remove the welcome screen!
 {% endcomment %}
 
-Hallo home
+<div class="container">
+
+    <div class="columns">
+
+      <div class="column">
+        <img src="{% static 'img/logo.svg' %}">
+      </div>
+
+      <div class="column is-three-quarters">
+
+        <div class="section"></div>
+
+        <div class="tabs is-medium">
+          <ul>
+            <li><a>Unser Angebot</a></li>
+            <li><a href="#Kontakt">Kontakt</a></li>
+            <li><a>Galerie</a></li>
+            <li><a>Impressum</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <section class="section">
+    <div class="container">
+      <h1 class="title has-text-grey-dark">
+        Unser Angebot
+      </h1>
+      <br>
+      <div class="columns">
+        <div class="column"></div>
+        <div class="column"></div>
+        <div class="column is-three-quarters">
+          <!-- Text -->
+          Wir betreuen tagsüber pflegebedürftige und/oder demente Menschen, die sonst im eigenen Haushalt von ihren
+          Angehörigen
+          oder von einem Pflegedienst betreut und versorgt werden.
+          <br><br>
+          In der Tagespflege können sie einen oder mehrere Tage in der Woche in Gemeinschaft verbringen und die
+          benötigte Betreuung
+          und Pflege durch unsere Mitarbeiter/-innen erhalten.
+          <br><br>
+          Familiäre Atmosphäre und liebevolle Betreuung sind für die Tagesgäste eine wertvolle Alternative zum
+          Pflegeheim und eine
+          Erleichterung für die pflegenden Angehörigen.Unsere Leistungen im Überblick:
+          <!-- Liste -->
+          <div class="content">
+            <ul>
+              <li>aktivierende Betreuung und Pflege</li>
+              <li>Förderung und Unterstützung der Mobilität und alltagspraktischer Fähigkeiten wie Kochen, Backen,
+                Wäschepflege, Blumen- und Gartenpflege</li>
+              <li>individuelle Belange des Einzelnen beziehen wir in den Tagesablauf ein</li>
+              <li>gemeinsame Aktivitäten und Beschäftigungen wie Bewegungsübungen, Gymnastik, Spaziergänge, kreatives
+                Gestalten, Gedächtnistraining, jahreszeitliche Feiern</li>
+              <li>täglich frisch zubereitete Mahlzeiten: Morgenspeise und Mittagessen, Kaffee und Gebäck</li>
+              <li>Ausführung Ihrer ärztlichen Verordnungen im Rahmen der Behandlungspflege nach genauer Absprache mit
+                Ihrem Hausarzt</li>
+              <li>Beratung und Unterstützung der pflegenden Angehörigen</li>
+              <li>Möglichkeit des rollstuhlgerechten Fahrdienstes von Tür zu Tür</li>
+            </ul>
+          </div>
+          Gerne organisieren wir auch Termine für physiotherapeutische Behandlungen.
+          <!-- Liste Ende -->
+          Wenn Sie sich für den Besuch in unserer Einrichtung entscheiden möchten, laden wir Sie gerne zu einem
+          ausführlichen Beratungsgespräch zu uns ein.
+          Wir gehen auf Ihre Fragen und Erwartungen an die Tagespflege ein, zeigen Ihnen unsere Räumlichkeiten und
+          stellen Ihnen unser Arbeit näher vor.
+          Selbstverständlich beraten wir Sie auch über mögliche Finanzierungen (Leistungen der Pflegekasse in Ihrem
+          Pflegegrad, Sozialamt,...)
+          <br>Unsere Einrichtung können Sie danach je nach freier Kapazität und nach Abschluss eines Vertrag über
+          Tagespflege besuchen.
+        </div>
+      </div>
+
+      <div class="section"></div>
+
+      <h1 class="title has-text-right has-text-grey-dark">
+        Behandlung & Therapie
+      </h1>
+      <br>
+      <div class="columns">
+        <div class="column is-three-quarters">
+
+          <!-- Text -->
+          Wir unterstützen Sie mit folgenden Behandlungsmethoden zur individuellen Lebensbegleitung:
+          <br><br>
+          <!-- Liste -->
+          <div class="content">
+            <ul>
+              <li>klassische Medizin (nach Arztanweisung)</li>
+              <li>Naturheilkunde</li>
+              <li>Homöopathie</li>
+              <li>basale Stimulation</li>
+              <li>Licht- und Farbentherapie</li>
+              <li>Aromapflege</li>
+              <li>Wickel, Bäder und Güsse</li>
+              <li>Bewegungsübungen, Gymnastik</li>
+              <li>individuelle Präventionsprogramme</li>
+              <li>gesunde Ernährung</li>
+              <li>individuelle Förderpflege</li>
+            </ul>
+            <br>
+          </div>
+          Gerne organisieren wir auch Termine für physiotherapeutische Behandlungen.
+          <!-- Liste Ende -->
+
+        </div>
+        <div class="column"></div>
+        <div class="column"></div>
+      </div>
+
+      <div class="section"></div>
+
+      <h1 class="title has-text-grey-dark">
+        Die Tagespflege
+      </h1>
+      <br>
+      <div class="columns">
+        <div class="column"></div>
+        <div class="column"></div>
+        <div class="column is-three-quarters">
+          <!-- Text -->
+          Wir bieten unseren Tagesgästen zusätzlich zu unserem täglich statt findenden Betreuungs- und
+          Beschäftigungsprogramm auch
+          diverse zusätzliche Aktivitäten, Unternehmungen, Feierlichkeiten und Veranstaltungen zu verschiedenen Themen
+          an.
+          <!-- List -->
+          <div class="content">
+            <ul>
+              <li>Ausflug in den Tierpark nach Augsburg</li>
+              <li>Ausflug in den Blumenpark Dehner in Rain</li>
+              <li>Gesundheitstage</li>
+              <li>Kreativgruppentage</li>
+              <li>Ausflug ins Erlebniswäldchen, zum Haus im Moos, an die Weicheringer Badeseen, ...</li>
+              <li>Kirchenbesuche, Seelsorge und Krankenkommunion</li>
+              <li>hauseigener Adventsbasar, Tag der offenen Tür</li>
+              <li>jahreszeitliche Feste wie z.B. Osterfest, Pfingstfest, Muttertagsfeier, St. Martinsfeier,
+                Nikolausfeier, Weihnachtsfest, ...</li>
+              <li>diverse Vorträge zum Thema: Aktiv im Alter, Ernährung, Sturzprävention, Umgang mit Demenz, ...</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="section"></div>
+
+
+      <h1 class="title has-text-right has-text-grey-dark">
+        <div id="Kontakt">
+          Sprechen Sie uns an
+        </div>
+      </h1>
+      <br>
+      <div class="columns">
+        <div class="column is-three-quarters">
+
+          <!-- Text -->
+          Wir beraten Sie gerne persönlich und bieten Ihnen die Möglichkeit einer individuellen Pflegeberatung.
+          Wir besprechen gerne Ihre Fragen, informieren Sie umfassend und erstellen mit Ihnen eine passendes
+          Betreuungsangebot.
+          <br>
+          Nehmen Sie sich Zeit mit Ihren Angehörigen, um uns und unsere Einrichtung näher kennen zu lernen.
+          <br><br>
+          Unsere Einrichtung wird von examinierten, erfahrenen Pflegefachkräften, unterstützenden Pflegekräften und
+          zusätzlichen Betreuungskräften betreut.
+          Selbstverständlich arbeiten wir auch eng mit Ihrem Hausarzt und weiteren Institutionen zusammen.
+          <br><br>
+          Wir freuen uns auf Sie und heißen Sie als unseren Tagesgast „Herzlich Willkommen“!
+          <br>Vereinbaren Sie telefonisch einen Beratungstermin unter der Rufnummer: 084 33 | 929 86 26.
+          <br><br>
+
+
+        </div>
+        <div class="column"></div>
+        <div class="column"></div>
+      </div>
+      <div class="section"></div>
+
+      <h1 class="title has-text-grey-dark">
+        Wo Sie uns finden
+      </h1>
+      <br>
+      <div class="columns">
+        <div class="column"></div>
+        <div class="column"></div>
+        <div class="column is-three-quarters">
+          <!-- Text -->
+          Unsere gemütliche Einrichtung finden Sie in der ehemaligen Grundschule Klingsmoos.
+          <br>
+          Die hell und freundlich gestalteten Räumlichkeiten wurden extra auf die individuellen Bedürfnisse unserer
+          Tagesgäste umgebaut und angepasst.
+          <br>
+          Dazu gehört auch ein großzügiger und liebevoll angelegter Garten, der zum spazieren und verweilen einlädt.
+          <!-- List -->
+
+        </div>
+      </div>
+
+      <!-- container div ende -->
+    </div>
+  </section>
+
+  <div class="section"></div>
+
+  <footer class="footer has-background-primary">
+
+    <div class="container">
+      <div class="columns">
+        <div class="column">Alte Schule Klingsmoos Tagespflege<br>Pöttmeser str. 77<br>86669 Königsmoos-Klingsmoos</div>
+        <div class="column">Tel: 08433 9298626<br>mail: info@tagespflege-klingsmoos.de</div>
+      </div>
+    </div>
+
+  </footer>
 
 {% endblock content %}
